@@ -14,15 +14,15 @@
 				var quantidade = arguments.length;		
 				var contador = 0;
 
-				while (arguments[contador]) { 
+				while (typeof arguments[contador] === 'number') { 
 					total += arguments[contador];
 					contador++;
 				}
 
 				return total / quantidade;
 			}
-
-			var media1 = calcularMedia(5,10);
+		
+			var media1 = calcularMedia(5,0);
 			var media2 = calcularMedia(5,10, 15, 20);
 
 			console.log('media1: ', media1);
