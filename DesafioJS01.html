@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DESAFIO 1 - Múltiplos Paramestros JS</title>
+</head>
+<body>
+	<script>
+		function calcular(){
+			console.log(arguments);
+			var contador  = 0;
+			var resultado = 0;
+			var media = 0;
+
+			while(arguments[contador]){
+				
+				resultado += arguments[contador];
+				contador++;
+			}
+			var media = resultado / contador;
+			console.log('A soma dos itens é: ', resultado);
+			console.log('A média dos itens é: ', media);
+		}
+
+		calcular(10, 20, 50, 40, 5, 100);
+	</script>
+</body>
+</html>
