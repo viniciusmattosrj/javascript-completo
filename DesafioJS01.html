@@ -2,24 +2,32 @@
 <html>
 <head>
 	<title>DESAFIO 1 - Múltiplos Paramestros JS</title>
+	<meta charset="utf-8">	
+	
 	<script>
-		function calcularMedia() {
-			console.log(arguments);
-			var contador = 0;
-			var resultado = 0;
-			var media = 0;
+		
+		(function () {
+			function calcularMedia(){
+				
+				var total = 0;
+				var quantidade = arguments.length;		
+				var contador = 0;
 
-			while (arguments[contador]) {
+				while (arguments[contador]) { 
+					total += arguments[contador];
+					contador++;
+				}
 
-				resultado += arguments[contador];
-				contador++;
+				return total / quantidade;
 			}
-			var media = resultado / contador;
-			console.log('A soma dos itens é: ', resultado);
-			console.log('A média dos itens é: ', media);
-		}
 
-		calcularMedia(10, 20, 50, 40, 5, 100);
+			var media1 = calcularMedia(5,10);
+			var media2 = calcularMedia(5,10, 15, 20);
+
+			console.log('media1: ', media1);
+			console.log('media2: ', media2);
+		})()
+
 	</script>
 </head>
 <body>	
