@@ -1,4 +1,4 @@
-# Javascript Inciante ao Mestre
+# Javascript do Iniciante ao Mestre
 - <a href="https://www.udemy.com/javascript-completo-2018-do-iniciante-ao-mestre/learn/v4/overview">Javascript completo. Do iniciante ao mestre</a> - Daniel Tapias Morales
 
 
