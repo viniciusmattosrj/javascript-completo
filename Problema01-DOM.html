@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PROBLEMA 01 - DOM</title>
+	<meta charset="utf-8">	
+	
+</head>
+<body>	
+	<h1>Curso Javascript Completo 2019</h1>	
+
+	<div id="msg"></div>
+	
+	<script>
+		(function () {
+			var nome = prompt('Qual o seu nome ?');
+			document.querySelector('#msg').innerHTML = "Bem-vindo,  <b>" + nome + "</b>";
+		}) ()
+	</script>
+
+</body>
+</html>
