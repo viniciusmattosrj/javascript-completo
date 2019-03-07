@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PROBLEMA 03 - DOM</title>
+	<meta charset="utf-8">	
+	
+</head>
+<body>	
+	<h1>Curso Javascript Completo 2019</h1>	
+
+	<input type="text" id="txtNome" value="digite">
+
+	<script>
+		/* O cifrão na frente de variável pode ser utilizado como padrão indicando que o elemento vem do DOM! */
+		var $txt = document.querySelector('txtNome');
+		var nome = "Vinicius ";
+		var sobreNome = "Mattos";
+
+		document.querySelector('#txtNome').value = nome + sobreNome;
+		document.querySelector('#txtNome').disabled = true;
+	
+	</script>
+
+</body>
+</html>
