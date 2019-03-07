@@ -16,14 +16,9 @@
 				if (callback && typeof callback === 'function') {
 					return callback(imc);
 				}
-
+				console.log('não passou callback');
 				return imc;
 			}
-
-			var pessoa1 = calcularIMC(75, 184);
-
-			console.log('IMC: ', pessoa1);
-
 
 			function classificaIMC(imc) {
 
@@ -46,7 +41,7 @@
 			}
 
 			var peso = 75;
-			var altura = 1.80;
+			var altura = 1.84;
 			
 			var imc = calcularIMC(peso, altura, classificaIMC);
 
