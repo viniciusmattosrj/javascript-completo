@@ -8,7 +8,8 @@
 <body>	
 	<h1>Curso Javascript Completo 2019</h1>	
 
-	<input type="text" id="txtNome" value="digite">
+	<input type="text" id="txtNome" value="digite"> <br /><br />
+	<input type="text" id="txtOutroNome" value="digite">
 
 	<script>
 		/* O cifrão na frente de variável pode ser utilizado como padrão indicando que o elemento vem do DOM! */
@@ -16,8 +17,12 @@
 		var nome = "Vinicius ";
 		var sobreNome = "Mattos";
 
+		/* Ambos elementos disabled e readOnly tem o mesmo comportamento */
 		document.querySelector('#txtNome').value = nome + sobreNome;
 		document.querySelector('#txtNome').disabled = true;
+
+		var $txtOutro = document.querySelector('txtOutroNome');
+		document.querySelector('#txtOutroNome').readOnly = true;
 	
 	</script>
 
