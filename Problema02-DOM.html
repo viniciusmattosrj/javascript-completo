@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PROBLEMA 02 - DOM</title>
+	<meta charset="utf-8">	
+	
+</head>
+<body>	
+	<h1>Curso Javascript Completo 2019</h1>	
+
+	<input type="text" id="txtNome" value="Informe o seu nome">
+	<button onclick="escreve()">Só clica</button>
+	<div id="msg"></div>
+
+	<script>
+	
+		var txtNome = document.querySelector('#txtNome');
+
+		function escreve() {
+			var nome = txtNome.value;
+			document.querySelector('#msg').innerHTML = "Bem-vindo, <b>"+ nome + "</b>";
+		}
+	</script>
+
+</body>
+</html>
