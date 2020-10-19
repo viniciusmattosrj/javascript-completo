@@ -1,11 +1,11 @@
 ## Requerimentos
 
-- Node &ge; 13.12
-- Npm
+- Node &ge; 10.15.*
+- Npm &ge; 6.14.*
 
 ### Tecnologias Utilizadas
 
-* Docker 
+* Docker ou NVM 
 * Express
 * JWT
 * ORM: Sequelize
